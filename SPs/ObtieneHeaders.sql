@@ -1,0 +1,13 @@
+IF OBJECT_ID('ObtieneHeaders', 'P') IS NOT NULL
+BEGIN
+    DROP PROCEDURE ObtieneHeaders;
+END;
+GO
+
+CREATE PROCEDURE ObtieneHeaders
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT * FROM Headers;
+END;
